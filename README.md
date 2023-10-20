@@ -2,14 +2,14 @@
 
 Official code implementation for "Frozen Transformers from Language Models are Effective Visual Encoder Layers"
 
-[Ziqi Pang](https://ziqipang.github.io/), [Ziyang Xie](https://ziyangxie.site/), [Yunze Man](https://yunzeman.github.io/), [Yu-Xiong Wang](https://yxw.web.illinois.edu/)
+[Ziqi Pang](https://ziqipang.github.io/), [Ziyang Xie*](https://ziyangxie.site/), [Yunze Man*](https://yunzeman.github.io/), [Yu-Xiong Wang](https://yxw.web.illinois.edu/)
 
 If you find our paper or code helpful for your work, please consider cite by
 ```tex
 @article{pang2023fozen,
   title={Frozen transformers from language models are effective visual encoder layers},
   author={Pang, Ziqi and Xie, Ziyang and Man, Yunze and Wang, Yu-Xiong},
-  journal={arXiv preprint arXiv:2111.09621},
+  journal={arXiv preprint arXiv:2310.12973},
   year={2023}
 }
 ```
