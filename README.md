@@ -1,6 +1,6 @@
 # Pretrained Transformers from Language Models for Visual Encoding
 
-Official code implementation for "Frozen Transformers from Language Models are Effective Visual Encoder Layers"
+Official code implementation for "[Frozen Transformers from Language Models are Effective Visual Encoder Layers](https://arxiv.org/abs/2310.12973)"
 
 [Ziqi Pang](https://ziqipang.github.io/), [Ziyang Xie*](https://ziyangxie.site/), [Yunze Man*](https://yunzeman.github.io/), [Yu-Xiong Wang](https://yxw.web.illinois.edu/)
 
