@@ -7,7 +7,7 @@ Official code implementation for "[Frozen Transformers from Language Models are 
 If you find our paper or code helpful for your work, please consider cite by
 ```tex
 @article{pang2023fozen,
-  title={Frozen transformers from language models are effective visual encoder layers},
+  title={Frozen transformers in language models are effective visual encoder layers},
   author={Pang, Ziqi and Xie, Ziyang and Man, Yunze and Wang, Yu-Xiong},
   journal={arXiv preprint arXiv:2310.12973},
   year={2023}
