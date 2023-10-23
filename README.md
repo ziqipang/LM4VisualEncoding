@@ -22,7 +22,7 @@ If you find our paper or code helpful for your work, please consider cite by
 
 This paper reveals an intriguing discovery: **pretrained transformers from LLMs, despite being trained solely on textual data, are *surprisingly* strong encoders for *purely* visual tasks in the absence of language.** Our exploration shows the potential of LLMs as general-purpose *encoders* for *visual* data, as opposed to the previous usages of either pure *encoders* for text embeddings or *decoders* for tokenized outputs.
 
-Our approach is striaghtforward yet overlooked: incorporating a **frozen** transformer block from a **pre-trained** LLM as a general-purpose visual **encoder** layer, directly processing the visual tokens. 
+Our approach is straightforward yet overlooked: incorporating a **frozen** transformer block from a **pre-trained** LLM as a general-purpose visual **encoder** layer, directly processing the visual tokens. 
 
 We intuitively illustrate our approach below (also Figure 1 in the paper). The procesure is as simple as three steps:
 
