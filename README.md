@@ -16,7 +16,8 @@ If you find our paper or code helpful for your work, please consider cite by
 
 ## News
 
-* `10/19/2023`: Paper is available on Arxiv with initial code release.
+* `10/24/2023`: Code release for action recognition.
+* `10/19/2023`: Paper is available on Arxiv with initial code release on image classification.
 
 ## 1. Introduction
 
@@ -42,7 +43,7 @@ We examine our discovery on a wide range of tasks and release their code in diff
 
 - [x] [Image classification](./image_classification/README.md)
 - [ ] Point cloud classification
-- [ ] Action recognition
+- [x] [Action recognition](./video_understanding/README.md)
 - [ ] Motion forecasting
 - [ ] 2D VQA and Image-Text Retrieval 
 - [ ] 3D VQA

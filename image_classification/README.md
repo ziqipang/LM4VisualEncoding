@@ -2,7 +2,7 @@
 
 We describe the procedures to re-produce the experiments for ViT and ViT-LLaMA in the paper. Before proceeding, **please make sure you have downloaded the checkpoint for LLaMA-7B from LLaMA-v1** ([link](https://github.com/facebookresearch/llama/tree/llama_v1)).
 
-A lot of the code is also adapted from [DeiT](https://github.com/facebookresearch/deit) and [AbsViT](https://github.com/bfshi/AbSViT/). So checking their code and paper will also help if you want to improve our models for classification.
+Our code-base is built from [DeiT](https://github.com/facebookresearch/deit) and [AbsViT](https://github.com/bfshi/AbSViT/). Great appreciation for their authors and engineers. If you have any questions on our implementation, checking their repository will also help a lot.
 
 ## 1. Environment
 
