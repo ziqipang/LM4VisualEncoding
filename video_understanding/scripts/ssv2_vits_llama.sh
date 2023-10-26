@@ -10,6 +10,7 @@ MODEL_PATH='checkpoints/videomae_ssv2_vits.pth'
 # We: this script is for 4 GPUs
 OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 run_class_finetuning.py \
     --model vit_llama_small_patch16_224 \
+    --llama_path /space_gpu1/datasets/llama \
     --data_set SSV2 \
     --nb_classes 174 \
     --data_path ${DATA_PATH} \

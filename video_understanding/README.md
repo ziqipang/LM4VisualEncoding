@@ -17,12 +17,14 @@ We basically follow VideoMAE's [guide](https://github.com/MCG-NJU/VideoMAE/blob/
 * `einops`
 * We were unable to use `deepspeed` on our server and also made corresponding changes in our code. **If you want to scale up our method, please check out original VideoMAE for integration with deepspeed.**
 
+Before proceeding, **please make sure you have downloaded the checkpoint for LLaMA-7B from LLaMA-v1** ([link](https://github.com/facebookresearch/llama/tree/llama_v1)).
+
 ## 3. Running Experiments
 
 
 * **Downloading checkpoints.** We finetune the models from the checkpoints pretrained by MAE in a self-supervised way by VideoMAE. Follow the [instructions](./checkpoints/instructions.md) to download the checkpoints and put them in `./checkpoints/`.
 
-* **Training.** Then use the scripts in `./scripts/` to run the training of models, e.g., [ssv2_vitb_llama.sh](./scripts/ssv2_vitb.sh).
+* **Training.** Then use the scripts in `./scripts/` to run the training of models, e.g., [ssv2_vitb_llama.sh](./scripts/ssv2_vitb.sh). If you want to train the models with LLaMA, make sure the `--llama_path` option pointing to the directory of your LLaMA-7B checkpoints. The contents in the directory should contains things like: `checklist.chk`, `consolidated.00.pth`, and `params.json`.
 
 * **Evaluation.** The training script will automatically conduct evaluation, displayed at the end of logs. If you want to evaluate a separate checkpoint, please add `--eval` to the training scipt and use `--resume` to point to the checkpoint you would like to evaluate.
 
