@@ -89,7 +89,7 @@ bash scripts/eval.sh [CONFIG_PATH] [CKPT_PATH]
 | PointBERT | objectonly | [model](https://cloud.tsinghua.edu.cn/f/60260a3cbd8940f5bf0d/?dl=1) | [config](configs/ScanObjectNN_models/PointTransformer_objectonly.yaml) | 88.12 |
 | **PointBERT+LLaMA** | hardest | [log](https://uofi.box.com/s/v68h8moyfrl2zgak60ruyai765fusnah) / [model](https://uofi.box.com/s/5ks3efjdt91itzxoclfrqu6drht3w645) | [config](configs/ScanObjectNN_models/PointLLaMa_hardest.yaml) | **83.87** |
 | **PointBERT+LLaMA**  | objectbg | [log](https://uofi.box.com/s/7e1ek3ncerq028u427feacx2qzm6jcdw) / [model](https://uofi.box.com/s/xwkvypnwcn50fbcc0kxw8f5woc09gkoe) | [config](configs/ScanObjectNN_models/PointLLaMa_objectbg.yaml) | **88.64**| 
-| **PointBERT+LLaMA** | objectonly | [log](https://uofi.box.com/s/tcyur9pqm7ohbfka4fkjkqw2gtpbdrv5) / [model](https://uofi.box.com/s/tcyur9pqm7ohbfka4fkjkqw2gtpbdrv5) | [config](configs/ScanObjectNN_models/PointLLaMa_objectonly.yaml) | **88.81** |
+| **PointBERT+LLaMA** | objectonly | [log](https://uofi.box.com/s/4hnr4abikyhj74p31zwpk4deqrquxuw0) / [model](https://uofi.box.com/s/tcyur9pqm7ohbfka4fkjkqw2gtpbdrv5) | [config](configs/ScanObjectNN_models/PointLLaMa_objectonly.yaml) | **88.81** |
 
 ***ModelNet Dataset**: TBD*
 
