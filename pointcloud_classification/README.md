@@ -28,10 +28,10 @@ pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.
 ### 2.1 Data 
 Follow the instructions in [PointBERT](https://github.com/lulutang0608/Point-BERT/blob/master/DATASET.md) to download and prepare the preprocessed data.
 
-### 2.3 PointBERT Pretrained Checkpoints
+### 2.2 PointBERT Pretrained Checkpoints
 Download the ShapeNet pretrained [Point-BERT.pth](https://cloud.tsinghua.edu.cn/f/202b29805eea45d7be92/?dl=1) checkpoints and put it under `checkpoints/pointbert`.
 
-### 2.2 LLaMA Checkpoints
+### 2.3 LLaMA Checkpoints
 Download the LLaMA-7B checkpoint from [LLaMA-v1](https://github.com/facebookresearch/llama/tree/llama_v1) and put it under `checkpoints/llama`.
 
 The final directory structure should look like this:
@@ -79,7 +79,7 @@ You can evaluate the model by checking the log file saved during training or run
 bash scripts/eval.sh [CONFIG_PATH] [CKPT_PATH]
 ```
 
-## 3. Model Zoo
+## 4. Model Zoo
 
 ### ScanObjectNN Dataset
 | Model | Split | Checkpoint | Config | Acc |
@@ -93,7 +93,7 @@ bash scripts/eval.sh [CONFIG_PATH] [CKPT_PATH]
 
 ***ModelNet Dataset**: TBD*
 
-## 4. Key Places to Watch
+## 5. Key Places to Watch
 * In [`llama.py`](./models/llama.py), we re-write LLaMA's code by removing positional embedding and auto-regressive attention masks.
 * In [`Point_BERT.py`](./models/Point_BERT.py), we add the LLaMA layer to Point-BERT according to user's config.
 
