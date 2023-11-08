@@ -26,7 +26,7 @@ This paper reveals an intriguing discovery: **pretrained transformers from LLMs,
 
 Our approach is straightforward yet overlooked: incorporating a **frozen** transformer block from a **pre-trained** LLM as a general-purpose visual **encoder** layer, directly processing the visual tokens. 
 
-We intuitively illustrate our approach below (also Figure 1 in the paper). The procesure is as simple as three steps:
+We intuitively illustrate our approach below (also Figure 1 in the paper). The procedure is as simple as three steps:
 
 * Extract a frozen LLM transformer block and append it on top of the original visual encoder.
 * Insert trainable linear layers before and after the added LLM block to align the feature dimensions.

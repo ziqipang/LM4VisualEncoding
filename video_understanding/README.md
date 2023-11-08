@@ -1,12 +1,12 @@
 # Video Understanding
 
-We mainly focus on training ViT models for action recognition on ["something-something-v2" (SSv2)](https://developer.qualcomm.com/software/ai-datasets/something-something) because it emphasizes undertsanding multi-frame actions instead of single-frame semantics. Our code-base is built upon [VideoMAE](https://github.com/MCG-NJU/VideoMAE/). Great appreciation for the authors of datasets and code-bases! If you have any question on our action recognition part, checking their original repositories will also be helpful.
+We mainly focus on training ViT models for action recognition on ["something-something-v2" (SSv2)](https://developer.qualcomm.com/software/ai-datasets/something-something) because it emphasizes understanding multi-frame actions instead of single-frame semantics. Our code-base is built upon [VideoMAE](https://github.com/MCG-NJU/VideoMAE/). Great appreciation for the authors of datasets and code-bases! If you have any question on our action recognition part, checking their original repositories will also be helpful.
 
 ## 1. Data Preparation
 
 * Step 1: download the dataset from SSv2's [official website](https://developer.qualcomm.com/software/ai-datasets/something-something).
 
-* Step 2: As mentioned in VideoMAE, you should (1) preprocess SSv2 into `mp4` formats with height dimension aligned to 240 pixels, and (2) dowload their `train.csv` and `val.csv` from VideoMAE's [google drive](https://drive.google.com/drive/folders/1cfA-SrPhDB9B8ZckPvnh8D5ysCjD-S_I). **If you are confused about the above steps, you are just like me. Please read the following sentence:** checkout the solution provided in [this issue](https://github.com/MCG-NJU/VideoMAE/issues/62#issuecomment-1317957373), which provides a more detailed guide for data preprocessing. I was following the same procedure.
+* Step 2: As mentioned in VideoMAE, you should (1) preprocess SSv2 into `mp4` formats with height dimension aligned to 240 pixels, and (2) download their `train.csv` and `val.csv` from VideoMAE's [google drive](https://drive.google.com/drive/folders/1cfA-SrPhDB9B8ZckPvnh8D5ysCjD-S_I). **If you are confused about the above steps, you are just like me. Please read the following sentence:** checkout the solution provided in [this issue](https://github.com/MCG-NJU/VideoMAE/issues/62#issuecomment-1317957373), which provides a more detailed guide for data preprocessing. I was following the same procedure.
 
 ## 2. Environment Setup
 
@@ -26,7 +26,7 @@ Before proceeding, **please make sure you have downloaded the checkpoint for LLa
 
 * **Training.** Then use the scripts in `./scripts/` to run the training of models, e.g., [ssv2_vitb_llama.sh](./scripts/ssv2_vitb.sh). If you want to train the models with LLaMA, make sure the `--llama_path` option pointing to the directory of your LLaMA-7B checkpoints. The contents in the directory should contains things like: `checklist.chk`, `consolidated.00.pth`, and `params.json`.
 
-* **Evaluation.** The training script will automatically conduct evaluation, displayed at the end of logs. If you want to evaluate a separate checkpoint, please add `--eval` to the training scipt and use `--resume` to point to the checkpoint you would like to evaluate.
+* **Evaluation.** The training script will automatically conduct evaluation, displayed at the end of logs. If you want to evaluate a separate checkpoint, please add `--eval` to the training script and use `--resume` to point to the checkpoint you would like to evaluate.
 
 ## 4. Model Zoo
 
@@ -42,7 +42,7 @@ ViT-B-LLaMA | [[log]](https://uofi.box.com/s/jttcx5q2s6fes8xz38xbdtvx8id90h72) /
 The modification to video models are quite similar to image classification.
 
 * In [`llama.py`](llama.py), we re-write LLaMA's code by removing positional embedding and auto-regressive attention masks.
-* The major modeling of ViT-LLaMA is in [`vit_llama.py`](./modeling_finetune_llama.py). The initialization and forward are straighforward:
+* The major modeling of ViT-LLaMA is in [`vit_llama.py`](./modeling_finetune_llama.py). The initialization and forward are straightforward:
 ```python
 # initialization
 ...

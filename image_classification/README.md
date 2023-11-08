@@ -64,7 +64,7 @@ We will also upload the checkpoints and logs for our ablation study. Please stay
 ## 4. Key Places to Watch
 
 * In [`llama.py`](./models/llama.py), we re-write LLaMA's code by removing positional embedding and auto-regressive attention masks.
-* The major modeling of ViT-LLaMA is in [`vit_llama.py`](./models/vit_llama.py). The initialization and forward are straighforward:
+* The major modeling of ViT-LLaMA is in [`vit_llama.py`](./models/vit_llama.py). The initialization and forward are straightforward:
 ```python
 # initialization
 ...
