@@ -16,7 +16,8 @@ If you find our paper or code helpful for your work, please consider cite by
 
 ## News
 
-* `11/01/2023`: Code release for pointcloud classification.
+* `01/16/2024`: Papers accepted at ICLR 2024 (Spotlight). :tada:
+* `11/01/2023`: Code release for point cloud classification.
 * `10/24/2023`: Code release for action recognition.
 * `10/19/2023`: Paper is available on Arxiv with initial code release on image classification.
 
