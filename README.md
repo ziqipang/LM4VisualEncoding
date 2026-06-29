@@ -17,8 +17,7 @@ If you find our paper or code helpful for your work, please consider cite by
 ## News
 
 * `01/16/2024`: Papers accepted at ICLR 2024 (Spotlight). :tada:
-* `11/01/2023`: Code release for point cloud classification.
-* `10/24/2023`: Code release for action recognition.
+* `10/24/2023`: Code release.
 * `10/19/2023`: Paper is available on Arxiv with initial code release on image classification.
 
 ## 1. Introduction
@@ -41,12 +40,5 @@ To explain the benefits of using frozen LLM transformers, we further propose **i
 
 ## 2. Getting Started with the Experiments
 
-We examine our discovery on a wide range of tasks and release their code in different directories:
-
-- [x] [Image classification](./image_classification/README.md)
-- [x] [Point cloud classification](./pointcloud_classification/README.md)
-- [x] [Action recognition](./video_understanding/README.md)
-- [ ] Motion forecasting
-- [ ] 2D VQA and Image-Text Retrieval 
-- [ ] 3D VQA
+We examine our discovery on a wide range of tasks and release their code in different directories. Please check our subdirectories for instructions.
 
